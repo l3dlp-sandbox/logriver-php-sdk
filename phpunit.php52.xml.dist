@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="true"
+         stopOnFailure="true"
+         syntaxCheck="true"
+         bootstrap="./tests/bootstrap52.php">
+    <testsuites>
+        <testsuite name="logriver-php52 Test Suite">
+            <directory>./tests/Logriver52/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src/Logriver52/</directory>
+        </whitelist>
+    </filter>
+</phpunit>

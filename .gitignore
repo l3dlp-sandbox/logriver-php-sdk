@@ -1,0 +1,6 @@
+backup
+vendor
+composer.lock
+._*
+.DS_Store
+
