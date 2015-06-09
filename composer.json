@@ -1,6 +1,6 @@
 {
     "name": "logriver/logriver-php-sdk",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "type": "library",
     "description": "The LogRiver PHP SDK.",
     "keywords": ["logriver", "tracking", "log", "logging", "monitoring", "sdk", "error", "performance"],
