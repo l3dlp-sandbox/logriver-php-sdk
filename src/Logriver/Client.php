@@ -108,4 +108,20 @@ class Client extends Sender
         }
         self::$instance->doCaptureElement(4, $messageOrObject, $mixedData);
     }
+
+    public static function trackIdentify($arrayData)
+    {
+        if (self::$instance === null && defined('_DEF_LOGRIVER_API_KEY')) {
+            trigger_error("LogRiver Error: You must use Logriver_Client instead Logriver\Client", E_USER_ERROR);
+        }
+        self::$instance->doTrack(1, $arrayData);
+    }
+
+    public static function track($actionName, $arrayData = array())
+    {
+        if (self::$instance === null && defined('_DEF_LOGRIVER_API_KEY')) {
+            trigger_error("LogRiver Error: You must use Logriver_Client instead Logriver\Client", E_USER_ERROR);
+        }
+        self::$instance->doTrack(2, $arrayData, $actionName);
+    }
 }
